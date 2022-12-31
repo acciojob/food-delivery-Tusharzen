@@ -7,7 +7,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
 @Entity(name = "users")
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class UserEntity{
 
 	@Id

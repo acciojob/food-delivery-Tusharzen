@@ -7,7 +7,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
 @Entity(name = "orders")
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class OrderEntity {
 
 	@Id
